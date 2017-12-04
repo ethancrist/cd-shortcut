@@ -18,7 +18,7 @@ shortcut() {
         done<$KEYFILE
     else
         echo "The key '$1' doesn't exist."
-        echo "Use 'cds <key> <dir>' to add it."
+        echo "Use 'cds -add <key> <dir>' to add it."
     fi
 }
 
