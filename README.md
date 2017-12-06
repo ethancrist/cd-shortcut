@@ -4,7 +4,8 @@ Bookmark long linux directories into keywords to be accessed faster.
 ## Installation
 ```bash
 git clone https://github.com/ethancrist/cd-shortcut.git && \
-cd-shortcut/init.sh
+cd-shortcut/init.sh && \
+alias cds="source cds"
 ```
 
 ## Usage
