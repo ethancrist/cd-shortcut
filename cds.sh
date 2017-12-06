@@ -13,7 +13,7 @@ shortcut() {
                 # Dir found
                 echo "Shorcutting to $dir";
                 cd "$dir";
-                ls
+                ls -a
             fi
         done<$KEYFILE
     else
