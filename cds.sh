@@ -64,6 +64,13 @@ list() {
     echo ""
 }
 
+uninstall() {
+    echo "[cd-shortcut] Uninstalling..."
+    rm ~/.keys.cds
+    rm /usr/local/bin/cds
+    echo "[cd-shortcut] Successfully uninstalled. Bye bye."
+}
+
 
 if [ "$1" == "-add" ] && [ -n "$2" ] && [ -n "$3" ]; then
     add "$2" "$3";
@@ -71,6 +78,8 @@ elif [ "$1" == "-rm" ] && [ "$2" != "" ]; then
     remove "$2";
 elif [ "$1" == "ls" ] || [ "$1" == "l" ] || [ "$1" == "list" ]; then
     list
+elif [ "$1" == "uninstall" ]; then
+    uninstall
 elif [ -n "$1" ]; then
     shortcut "$1"
 else
